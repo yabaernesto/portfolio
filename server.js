@@ -37,7 +37,7 @@ server.get('/portfolio', (request, response) => {
 })
 
 server.get('/video', (request, response) => {
-   const id = response.query.id 
+   const id = request.query.id 
 
    const video = videos.find(video => {
       return video.id == id

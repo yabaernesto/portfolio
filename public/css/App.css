@@ -183,6 +183,7 @@ iframe {
 /*------ Video Page ------*/
 .video { 
    margin: 0 auto;
+   margin-bottom: 2rem;
    max-width: 800px;
 }
 
