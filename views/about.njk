@@ -7,18 +7,18 @@
 {% block content %}
    <div id="wrapper">
       <img 
-         src="https://avatars.githubusercontent.com/u/97414034?v=4" 
-         alt="Yaba Ernesto"
+         src="{{ about.avatar_url }}" 
+         alt="Foto de {{ about.name }}"
       >
-      <h1>Yaba Ernesto</h1>
-      <h2>Aluno - Rocketseat</h2>
-      <p>Programador fullstack, focado em aprender tech novas e foco em novos recursos. Aluno da <a href="hytps://rocketseat.com.br" target="_blank">Rocketseat</a>!</p>
+      <h1>{{ about.name }}</h1>
+      <h2>{{ about.role }}</h2>
+      <p>{{ about.description }}</p>
    </div>
 
    <div id="links-footer" class="links">
-      <a href="#" target="_blank">GitHub</a>
-      <a href="#" target="_blank">Twitter</a>
-      <a href="#" target="_blank">Linkedin</a>
+      <a href="{{ about.links[0].url }}" target="_blank">{{ about.links[0].name }}</a>
+      <a href="{{ about.links[1].url }}" target="_blank">{{ about.links[1].name }}</a>
+      <a href="{{ about.links[2].url }}" target="_blank">{{ about.links[2].name }}</a>
    </div>
 
    {% endblock %}
